@@ -1,0 +1,12 @@
+{
+    "$id": "customer",
+
+    "type": "object",
+    "properties": {
+      "first_name": { "type": "string" },
+      "last_name": { "type": "string" },
+      "shipping_address": { "$ref": "file:/Users/simonmacdonald/Developer/macdonst/models-test/address.schema.json" },
+      "billing_address": { "$ref": "file:/Users/simonmacdonald/Developer/macdonst/models-test/address.schema.json" }
+    },
+    "required": ["first_name", "last_name", "shipping_address", "billing_address"]
+  }
